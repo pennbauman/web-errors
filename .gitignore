@@ -1,4 +1,5 @@
 **~
 archive/**
 output/**
+!output/.place-holder
 template*.shtml
