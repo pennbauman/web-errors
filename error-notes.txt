@@ -1,0 +1,113 @@
+Web Server Errors
+
+Common
+	400
+	401 Unauthorized - user is not logged into a password-protected area
+	403 Forbidden - browser does not have permission to perform the requested action
+	404 Not Found - browser cannot find the requested document on the server
+	500 Internal Server Error - server was unable to finish processing the request
+	502 Bad Gateway - server received an invalid response from an upstream server
+	503 Service Unavailable - server is currently unable to process the request
+
+cPanel (Complete)
+	400 Bad Request
+		The request could not be completed due to invalid syntax.
+	401 Authorization Required
+		The client must be authenticated to access this content
+	402 Payment Required
+xxx
+	403 Forbidden
+		The client is not authorized to access this content. 
+	404 Not Found
+		The requested content does not exist. 
+	405 Method Not Allowed
+		The request method has been disabled. 
+	406 Not Acceptable
+		The server cannot find an content meeting this criteria. 
+	407 Proxy Authentication Required
+		The client must be authenticated by a proxy to access this content. 
+	408 Request Timeout
+		The server has shut down this connection due to lack of use. 
+	409 Conflict
+		The request conflicts with the current state of the server. 
+	410 Gone
+		The requested content has been deleted. 
+	411 Length Required
+		The "Content-Length" feild is not defined and is required. 
+	412 Precondition Failed
+		The server does not meet preconditions indicated by the client. 
+	413 Request Entity Too Large
+		The requested content exceded limits set by the server. 
+	414 Request URI Too Large
+		The URI request by the client is longer than the server will interperate. 
+	415 Unsupported Media Type
+		The media format of the request in not supported by the server. 
+	416 Request Range Not Satisfiable
+		The range specified by the request cannot be fulfilled. 
+	417 Expectation Failed
+		The expectation indicated cannot be met by the server. 
+	422 Unprocessable Entity
+		The request could not be completed due to semantic errors.
+	423 Locked
+		The requested content is locked. 
+	424 Failed Dependency
+		The request failed to to failure of a previous request. 
+
+	500 Internal Server Error
+		The server has encountered an unknown error. 
+	501 Not Implemented
+		The request method is not supported by the server.
+	502 Bad Gateway
+		The server recieved an invlaid response from an upstream server. 
+	503 Service Unavailable
+		The server is not current capable on handling the request. 
+	504 Gateway Timeout
+		The server failed to get a response from an upstream server in time. 
+	505 HTTP Version Not Supported
+		The HTTP version of the request is not supported by the server. 
+	506 Variant Also Negotiates
+		Search for the requested conent has resulted in a circular reference. 
+	507 Insufficient Storage
+		The server has an internal configuration error. 
+	510 Not Extended
+		Extentions to the request are required for its competion. 
+
+cPanel (Short)
+	400 Bad Request
+		The request could not be completed due to invalid syntax.
+	401 Authorization Required
+		The client must be authenticated to access this content.
+	402 Payment Required
+	403 Forbidden
+		The client is not authorized to access this content. 
+	404 Not Found
+		The requested content does not exist. 
+	405 Method Not Allowed
+	406 Not Acceptable
+	407 Proxy Authentication Required
+	408 Request Timeout
+	409 Conflict
+	410 Gone
+	411 Length Required
+	412 Precondition Failed
+	413 Request Entity Too Large
+	414 Request URI Too Large
+	415 Unsupported Media Type
+	416 Request Range Not Satisfiable
+	417 Expectation Failed
+	422 Unprocessable Entity
+	423 Locked
+	424 Failed Dependency
+
+	500 Internal Server Error
+		The server has encountered an interal error. 
+	501 Not Implemented
+		The server recieved an invlaid response from an upstream server. 
+	502 Bad Gateway
+		The server is not current capable on handling the request. 
+	503 Service Unavailable
+	504 Gateway Timeout
+	505 HTTP Version Not Supported
+	506 Variant Also Negotiates
+	507 Insufficient Storage
+	510 Not Extended
