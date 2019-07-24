@@ -1,7 +1,7 @@
 #import os
 import csv
 
-sourceFile = open("errors.csv~", "r")
+sourceFile = open("errors.csv", "r")
 sourceLines = csv.reader(sourceFile, delimiter=",")
 
 for code in sourceLines:

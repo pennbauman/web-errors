@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>{{ code }} {{ title }}</title>
+		<link rel="shortcut icon" href="/files/img/error_favicon.png">
+	</head>
+	<style type="text/css">
+		body {
+			background:#111111;
+			color:#eeeeee;
+			font-family:monospace;
+			font-size:2vh;
+			max-width:85vw;
+			margin:auto;
+			padding:4vh 0;
+		}
+		h1 {
+			font-size:5vh;
+			color:#cc0000;
+			margin-bottom:-1vh;
+		}
+		h2 {
+			font-size:3vh;
+		}
+		h3 {
+			font-size:2vh;
+			color:#ffcc00;
+		}
+		p { font-size:2vh; }
+		a { color:inherit; }
+		a:hover { color:#ffcc00; }
+	</style>
+	<body>
+		<h1>ERROR: {{ code }} {{ title }}</h1>
+		<h2><!--#echo var="HTTP_HOST" --><!--#echo var="REQUEST_URI" --></h2>
+		<h3>{{ body }}</h3>
+		<p><a href="/">Home</a></p>
+	</body>
+</html>
