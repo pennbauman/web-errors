@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html><html>
 	<head>
 		<title>{{ code }} {{ title }}</title>
 		<link rel="shortcut icon" href="/files/img/error_favicon.png">

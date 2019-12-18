@@ -5,9 +5,9 @@ Python script to auto generate web server error pages.
 1. Setup template.shtml, this can be done my simply copying sample-template.shtml
 2. Run: 
 
-	$ python error-gen.py
+	`python error-gen.py`
 
-3. Collect the error files from output/ and move them to your wbe server
+3. Collect the error files from output/ and move them to your web server
 
 ## Setting Up Error Files
 Add the following lines to .htaccess on your server, substitute file locations as appropriate:
