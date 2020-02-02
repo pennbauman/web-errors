@@ -1,10 +1,10 @@
-#import os
 import csv
 
 sourceFile = open("errors.csv", "r")
 sourceLines = csv.reader(sourceFile, delimiter=",")
 
 for code in sourceLines:
+    # Get error data for input code
     def nameGet(name):
         if name == "code":
             return code[0].strip()
@@ -16,18 +16,20 @@ for code in sourceLines:
             print("ERROR: Invalid template")
             return "ERROR"
 
+    # Setup output file
     templateFile = open("template.shtml", "r")
     template = templateFile.readlines()
     out = open("output/" + code[0] + ".shtml", "w")
+
+    # Replace {{codes}} with data
     for line in template:
         while "{{" in line:
             start = line.find("{{")
             end = line.find("}}")
             name = line[start + 2:end].lower().strip()
             line = line[:start] + nameGet(name) + line[end+2:]
-        
+
         out.write(line)
 
     templateFile.close()
     out.close()
-    

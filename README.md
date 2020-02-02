@@ -2,10 +2,19 @@
 Python script to auto generate web server error pages. 
 
 ## Use
-1. Setup template.shtml, this can be done my simply copying sample-template.shtml
-2. Run: 
+1. Setup template.shtml, this can be done with:
 
-	`python error-gen.py`
+	cp sample-template.shtml template.shtml
+
+Templates accept 3 variables formated as `{{var}}` to input text into the page based on the error:
+
+	* `{{code}}` For the error code (i.e. '404').
+	* `{{title}}` For the name of the error (i.e. 'Page Not Found').
+	* `{{body}}` For a description of the error.
+
+2. Run:
+
+	python error-gen.py
 
 3. Collect the error files from output/ and move them to your web server
 
